@@ -85,3 +85,10 @@ export const fetchUserDataAdvanced = async (username, location = '', minRepos = 
     throw new Error('User not found');
   }
 };
+
+// Export all functions explicitly at the end (alternative approach)
+export default {
+  fetchUserData,
+  searchUsers,
+  fetchUserDataAdvanced,
+};
