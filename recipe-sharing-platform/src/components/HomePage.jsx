@@ -1,15 +1,16 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 function HomePage() {
   const [recipes, setRecipes] = useState([]);
 
   useEffect(() => {
-  // Fetch data from data.json
   fetch('/src/data.json')
     .then(response => response.json())
     .then(data => setRecipes(data))
     .catch(error => console.error('Error loading recipes:', error));
 }, []);
+
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
@@ -30,9 +31,10 @@ function HomePage() {
         {/* Recipe Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {recipes.map((recipe) => (
-            <div
+            <Link
               key={recipe.id}
-              className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer"
+              to={`/recipe/${recipe.id}`}
+              className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out"
             >
               {/* Recipe Image */}
               <div className="overflow-hidden">
@@ -57,7 +59,7 @@ function HomePage() {
                   View Recipe
                 </button>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 
