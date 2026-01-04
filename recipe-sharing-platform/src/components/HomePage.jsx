@@ -17,12 +17,22 @@ function HomePage() {
       {/* Header */}
       <header className="bg-white shadow-md">
         <div className="container mx-auto px-4 py-6">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-800 text-center">
-            Recipe Sharing Platform
-          </h1>
-          <p className="text-gray-600 text-center mt-2">
-            Discover and share amazing recipes from around the world
-          </p>
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div className="text-center sm:text-left">
+              <h1 className="text-3xl md:text-4xl font-bold text-gray-800">
+                Recipe Sharing Platform
+              </h1>
+              <p className="text-gray-600 mt-2">
+                Discover and share amazing recipes from around the world
+              </p>
+            </div>
+            <Link
+              to="/add-recipe"
+              className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 transform hover:scale-105 whitespace-nowrap"
+            >
+              + Add Recipe
+            </Link>
+          </div>
         </div>
       </header>
 
