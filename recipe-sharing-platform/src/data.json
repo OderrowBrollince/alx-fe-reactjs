@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Spaghetti Carbonara",
+    "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
+    "image": "https://via.placeholder.com/300x200/FF6B6B/FFFFFF?text=Spaghetti+Carbonara"
+  },
+  {
+    "id": 2,
+    "title": "Chicken Tikka Masala",
+    "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
+    "image": "https://via.placeholder.com/300x200/4ECDC4/FFFFFF?text=Chicken+Tikka"
+  },
+  {
+    "id": 3,
+    "title": "Caesar Salad",
+    "summary": "A fresh salad with romaine lettuce, croutons, parmesan cheese, and Caesar dressing.",
+    "image": "https://via.placeholder.com/300x200/95E1D3/FFFFFF?text=Caesar+Salad"
+  },
+  {
+    "id": 4,
+    "title": "Beef Tacos",
+    "summary": "Seasoned ground beef in crispy taco shells with fresh toppings and zesty sauce.",
+    "image": "https://via.placeholder.com/300x200/F38181/FFFFFF?text=Beef+Tacos"
+  },
+  {
+    "id": 5,
+    "title": "Vegetable Stir Fry",
+    "summary": "A colorful mix of fresh vegetables stir-fried with aromatic sauces and spices.",
+    "image": "https://via.placeholder.com/300x200/AA96DA/FFFFFF?text=Veggie+Stir+Fry"
+  },
+  {
+    "id": 6,
+    "title": "Chocolate Lava Cake",
+    "summary": "Decadent chocolate cake with a gooey molten center, served warm with vanilla ice cream.",
+    "image": "https://via.placeholder.com/300x200/FCBAD3/FFFFFF?text=Lava+Cake"
+  }
+]
