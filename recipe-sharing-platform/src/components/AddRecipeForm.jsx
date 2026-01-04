@@ -13,7 +13,10 @@ function AddRecipeForm() {
 
   // Handle input changes
   const handleChange = (e) => {
-    const { name, value } = e.target;
+    const target = e.target;
+    const name = target.name;
+    const value = target.value;
+    
     setFormData(prev => ({
       ...prev,
       [name]: value
@@ -30,7 +33,9 @@ function AddRecipeForm() {
 
   // Handle input blur (when user leaves a field)
   const handleBlur = (e) => {
-    const { name } = e.target;
+    const target = e.target;
+    const name = target.name;
+    
     setTouched(prev => ({
       ...prev,
       [name]: true
